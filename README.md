@@ -7,7 +7,8 @@
 #
 # Contenido
 - [Entorno de trabajo](/docs/linux/setup.md)
-- [Introducción a Lunix](/docs/linux/intro.md)
+- [Introducción a Linux](/docs/linux/intro.md)
+    - [Guia de ejercicios optativos](/docs/linux/guia_optativa.md)
 - [Scripting](/docs/scripting/sintaxis.md)
 
 

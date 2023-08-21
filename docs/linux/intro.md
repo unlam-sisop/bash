@@ -6,6 +6,7 @@
   - [Permisos](#permisos)
   - [Directorios y archivos](#directorios-y-archivos)
   - [Manejo de archivos](#manejo-de-archivos)
+  - [Variables de entorno](#variables-de-entorno)
   - [Redireccionamiento de entrada/salida](#redireccionamiento-de-entradasalida)
   - [Procesos](#procesos)
   - [Daemons](#daemons)
@@ -320,6 +321,55 @@ El comando `wc` es una herramienta útil que nos permite contar la cantidad de l
 | grep 'filtro' {file}     | busca en {file} coincidencias según el `filtro' indicado   |
 | wc {file}                | cuenta la cantidad de líneas/palabras/caracteres en {file} |
 | find {ruta} -name {file} | busca {file} en la {ruta} especificada.                    |
+
+
+## Variables de entorno
+Las variables de entorno en Linux son valores que se utilizan para configurar el entorno en el que se ejecutan los procesos. Estas variables proporcionan información y opciones específicas a las aplicaciones, así como configuraciones personalizadas para cada usuario.
+
+### Características de las Variables de Entorno:
+
+1. **Configuración Global y Personal**: Las variables de entorno pueden ser globales, aplicándose a todo el sistema, o específicas de usuario, afectando solo al usuario actual.
+
+2. **Valores de Configuración**: Las variables de entorno contienen valores que influyen en el comportamiento de las aplicaciones y procesos.
+
+3. **Accesibilidad**: Los programas pueden acceder a las variables de entorno para obtener información específica o ajustar su funcionamiento.
+
+4. **Diferentes Propósitos**: Las variables de entorno pueden utilizarse para proporcionar información como rutas de archivos, ubicaciones de bibliotecas, ajustes de idioma y más.
+
+### Manipulación de Variables de Entorno:
+
+1. **Ver Variables de Entorno**:
+   - `env`: Muestra todas las variables de entorno actuales.
+
+2. **Definir Variables de Entorno Temporales**:
+   - `NOMBRE_VARIABLE=valor_comando`: Define una variable de entorno solo para el comando especificado.
+
+3. **Definir Variables de Entorno Permanentes**:
+   - Puedes agregar definiciones de variables en archivos de inicio, como `.bashrc` o `.profile`, para que se carguen cada vez que inicies sesión.
+
+### Ejemplos de Variables de Entorno:
+
+1. **`PATH`**: Define las rutas de búsqueda de ejecutables. Cuando ejecutas un comando, el sistema busca en las rutas listadas en `PATH`.
+
+2. **`HOME`**: Contiene la ruta del directorio personal del usuario actual.
+
+3. **`USER`** o **`LOGNAME`**: Contiene el nombre del usuario actual.
+
+4. **`LANG`** y **`LC_*`**: Configuran el idioma y la configuración regional utilizados por aplicaciones.
+
+5. **`LD_LIBRARY_PATH`**: Define las rutas de búsqueda de bibliotecas compartidas (shared libraries).
+
+6. **`PS1`**: Define el formato del prompt en la terminal.
+
+### Ejemplo Práctico:
+
+Supongamos que deseas agregar una ruta personalizada a `PATH` para que los comandos en ese directorio sean ejecutables desde cualquier ubicación:
+
+```bash
+export PATH=$PATH:/ruta/a/mi/directorio
+```
+
+Esto agrega `/ruta/a/mi/directorio` a la variable `PATH`.
 
 
 ## Redireccionamiento de entrada/salida
