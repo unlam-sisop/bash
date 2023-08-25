@@ -402,7 +402,7 @@ Esta tarea la podemos realizar con los operadores de redireccionamiento:
 
   Ejemplo: `ls | grep archivo | head` listará los archivos en un directorio y luego pasará la lista a grep para buscar "archivo" y finalmente ese resultado será enviado a head para mostrar los primeros 10 resultados.
 
-## Procesos
+## Procesos
 En Linux, un proceso es una instancia en ejecución de un programa. Cada vez que ejecutas un programa, se crea un nuevo proceso para ese programa. Como parte del manejo de dichos procesos, podremos visualizar los procesos en ejecución, eliminarlos, enviarles señales y también crearlos.
 
 ### Visualización de Procesos:
