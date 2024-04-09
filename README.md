@@ -2,7 +2,7 @@
 ## Guia téorica y práctica sobre Linux y scripting con Bash
 ### Sistemas Operativos
 
-Última revisión Agosto 2023
+Última revisión Abril 2024
 
 #
 # Contenido
@@ -15,7 +15,8 @@
     - [Estructura de un script](/docs/scripting/estructura.md)
     - [Sintáxis, condicionales y operaciones](/docs/scripting/estructura.md)
     - [Manejo de parámetros](/docs/scripting/parametros.md)
-    - [Ejemplos](/docs/scripting/ejemplos/index.md)
-
+    - [AWK](/docs/scripting/awk.md)
+    - [Ejemplos](/clases)
+    
 
 
